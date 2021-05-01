@@ -1,12 +1,12 @@
-# ORM Mapping Classes to Tables Lab
+# Mapping Ruby Classes to a Database Lab
 
-## Objectives
+## Learning Goals
 
-1. Write a class that is mapped, or equated, to a database table. 
-2. Build a method that creates a table that maps to the given class. 
-3. Write a method that drops that table. 
-4. Write a method that saves a given instance to the database table. 
-5. Write a method that both creates a new instance of the class *and* saves that instance to a database table. 
+- Write a class that is mapped, or equated, to a database table. 
+- Build a method that creates a table that maps to the given class. 
+- Write a method that drops that table. 
+- Write a method that saves a given instance to the database table. 
+- Write a method that both creates a new instance of the class *and* saves that instance to a database table. 
 
 ## Overview
 
@@ -57,5 +57,3 @@ Use bound paremeters to pass the given student's name and grade into the SQL sta
 ### The `.create` Method
 
 This is a class method that uses keyword arguments. The keyword arguments are `name:` and `grade:`. Use the values of these keyword arguments to: 1) instantiate a new `Student` object with `Student.new(name, grade)` and 2) save that new student object via `student.save`. The `#create` method should return the student object that it creates. 
-
-
